@@ -1,4 +1,5 @@
 import ListAplikasi from "../List/ListAplikasi";
+import '../style.css';
 
 const Aplikasi = () =>{
     const listApp = [
@@ -8,7 +9,7 @@ const Aplikasi = () =>{
         {id: 4, name: 'twitter'}
     ]
     return(
-        <div>
+        <div className="App">
             <h3>
                 Aplikasi yang saya gunakan sehari-hari
             </h3>

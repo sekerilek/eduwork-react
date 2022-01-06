@@ -1,10 +1,10 @@
-import './App.css';
+
 import Aplikasi from './BasicComponents/Tugas/Aplikasi/Aplikasi';
 
 function App() {
   return (
-    <div className="App">
-      hello
+    <div>
+      
       <Aplikasi />
     </div>
   );

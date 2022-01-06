@@ -1,3 +1,5 @@
+import '../style.css'
+
 const ListAplikasi = (props) =>{
     console.log(props.dataList)
     return(
