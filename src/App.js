@@ -1,5 +1,5 @@
 
-import Aplikasi from './BasicComponents/Tugas/Aplikasi/Aplikasi';
+import Aplikasi from './BasicComponents/Aplikasi/Aplikasi.js';
 
 function App() {
   return (
