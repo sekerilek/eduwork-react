@@ -1,11 +1,10 @@
+import Styling from "./StylingComponents";
 
-import Aplikasi from './BasicComponents/Aplikasi/Aplikasi.js';
 
 function App() {
   return (
     <div>
-      
-      <Aplikasi />
+      <Styling/>
     </div>
   );
 }
