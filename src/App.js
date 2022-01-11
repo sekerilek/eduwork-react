@@ -1,10 +1,9 @@
-import Styling from "./StylingComponents";
-
+import RegistrationForm from "./FormValidation/RegistrationForm";
 
 function App() {
   return (
     <div>
-      <Styling/>
+      <RegistrationForm />
     </div>
   );
 }

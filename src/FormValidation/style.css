@@ -1,0 +1,11 @@
+.form-content {
+  width: 500px;
+  margin: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  position: relative;
+  padding: 20px;
+}
+.errors {
+  color: red;
+}
