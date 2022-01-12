@@ -1,9 +1,9 @@
-import RegistrationForm from "./FormValidation/RegistrationForm";
+import NewsApp from "./Lifecycle";
 
 function App() {
   return (
     <div>
-      <RegistrationForm />
+      <NewsApp />
     </div>
   );
 }
