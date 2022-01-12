@@ -28,7 +28,7 @@ class LifecycleComp extends React.Component {
   async _fetchData() {
     try {
       const response = await fetch(
-        `https://newsapi.org/v2/top-headlines?country=id&apiKey=cf961da6d12542ebb77dd016a8c28fc4`
+        `https://newsapi.org/v2/top-headlines?country=us&apiKey=cf961da6d12542ebb77dd016a8c28fc4`
       );
       const data = await response.json();
       this.setState({ data: data.articles });
@@ -62,7 +62,7 @@ class LifecycleComp extends React.Component {
 
   render() {
     let { data } = this.state;
-    console.log(this.state.keyword);
+    //console.log(this.state.keyword);
     return (
       <div>
         <Container>
