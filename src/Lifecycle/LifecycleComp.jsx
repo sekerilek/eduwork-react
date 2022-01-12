@@ -39,16 +39,20 @@ class LifecycleComp extends React.Component {
 
   async _fetchSearch(param) {
     //console.log(param);
-    try {
-      const response = await fetch(
-        "https://newsapi.org/v2/everything?q=" +
-          param +
-          "&from=2021-12-12&sortBy=publishedAt&apiKey=cf961da6d12542ebb77dd016a8c28fc4"
-      );
-      const data = await response.json();
-      this.setState({ data: data.articles });
-    } catch (err) {
-      console.log(err);
+    if (param === "") {
+      this._fetchData();
+    } else {
+      try {
+        const response = await fetch(
+          "https://newsapi.org/v2/everything?q=" +
+            param +
+            "&from=2021-12-12&sortBy=publishedAt&apiKey=cf961da6d12542ebb77dd016a8c28fc4"
+        );
+        const data = await response.json();
+        this.setState({ data: data.articles });
+      } catch (err) {
+        console.log(err);
+      }
     }
   }
 
