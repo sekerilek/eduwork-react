@@ -1,9 +1,9 @@
-import NewsApp from "./Lifecycle";
+import Home from "./Hooks/Home";
 
 function App() {
   return (
     <div>
-      <NewsApp />
+      <Home />
     </div>
   );
 }
