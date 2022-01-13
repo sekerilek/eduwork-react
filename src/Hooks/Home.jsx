@@ -8,6 +8,7 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useEffect } from "react";
 import Articles from "./Articles";
+import axios from "axios";
 
 const Home = () => {
   const [articles, setArticles] = useState([]);
@@ -17,15 +18,23 @@ const Home = () => {
   );
 
   useEffect(() => {
-    fetch(
-      `https://newsapi.org/v2/${paramFromButton}&apiKey=17ca9f86cf474fdf896cd28c8f6b269c`
-    )
+    // fetch(
+    //   `https://newsapi.org/v2/${paramFromButton}&apiKey=17ca9f86cf474fdf896cd28c8f6b269c`
+    // )
+    //   .then((res) => {
+    //     return res.json();
+    //   })
+    //   .then((res) => {
+    //     console.log(res.articles);
+    //     setArticles(res.articles);
+    //   });
+    axios
+      .get(
+        `https://newsapi.org/v2/${paramFromButton}&apiKey=17ca9f86cf474fdf896cd28c8f6b269c`
+      )
       .then((res) => {
-        return res.json();
-      })
-      .then((res) => {
-        console.log(res.articles);
-        setArticles(res.articles);
+        console.log(res.data.articles);
+        setArticles(res.data.articles);
       });
   }, [paramFromButton]);
 
@@ -37,7 +46,7 @@ const Home = () => {
     <div>
       <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">News App</Navbar.Brand>
+          <Navbar.Brand href="home">News App</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
         </Container>
       </Navbar>
