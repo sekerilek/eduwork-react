@@ -13,10 +13,7 @@ class CreateCover extends React.Component {
                 <strong>Wildan Ramadhan</strong>
               </h1>
               <p className="lead text-light mb-3">code enthusiast</p>
-              <a
-                href="#"
-                className="btn btn-outline-light btn-round m-2 btn-lg"
-              >
+              <a className="btn btn-outline-light btn-round m-2 btn-lg">
                 Linkedin
               </a>
             </Col>
