@@ -38,7 +38,7 @@ class LifecycleComp extends React.Component {
   }
 
   async _fetchSearch(param) {
-    //console.log(param);
+    //console.log(this.state.keyword);
     if (param === "") {
       this._fetchData();
     } else {
